@@ -1,4 +1,4 @@
-var apiKey = '39ed6293008242c39c5931e159dde131';
+
 
 var keyParam = '&api_key=';
 var qParam = '?q=';
@@ -11,9 +11,8 @@ var testQ = "trump"
 var queryURL = baseUrl + qParam + testQ + keyParam + apiKey;
 
 
-
-
-
+//var userSearch = $("#emailhelp").val().trim();
+//var userRecords = $("exampleSelect1").val().trim();
 $(document).ready(function(){
     $.ajax({
         url: queryURL,

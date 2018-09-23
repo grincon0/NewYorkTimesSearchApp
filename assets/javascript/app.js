@@ -6,19 +6,17 @@ var endParam = '?end_date=';
 var pageParam = '?page=';
 var baseUrl = 'https://api.nytimes.com/svc/search/v2/articlesearch.json' ;
 var testQ = "trump";
-//var userSearch = $("#emailhelp").val().trim();
-//var userRecords = $("exampleSelect1").val().trim();
+
 $("#sender").on("click", function (){
     var userSearch = $("#exampleInputEmail1").val().trim();
     //var userRecords = $("exampleSelect1").val().trim();
-    var queryURL = baseUrl + qParam + testQ + keyParam + apiKey;
+    var queryURL = baseUrl + qParam + userSearch + keyParam + apiKey;
 
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function(response){
         console.log(response);
-        console.log(response.response.docs[1].headline.main);
         var source = response.response.docs;
         for(var i = 0; i < source.length; i++){
             var newDiv = $('<div>');

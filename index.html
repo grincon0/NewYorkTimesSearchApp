@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +19,7 @@
         <div class="row">
             <div class="col">
                 <div class="jumbotron bg-dark text-white text-center">
-                    <h1>New York Times Search</h1>
+                    <h1><i class="fas fa-newspaper"></i>New York Times Search</h1>
                 </div>
             </div>
         </div>
@@ -26,7 +28,6 @@
                 <div class="form-group">
                     <label for="exampleInputEmail1">Search Term</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type to search">
-                    <small id="emailHelp" class="form-text text-muted">Type a keyword to search and we'll do the rest.</small>
                 </div>
                 <div class="form-group">
                         <label for="exampleSelect1">Number of Records to Retrieve</label>
@@ -44,6 +45,21 @@
                 </div>
                 <button type="submit" id="sender" class="btn btn-primary">Submit</button>
             </form>
+        </div>
+        <div class="row bg-light rounded">
+            <br>
+            <br>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row border-0">
+                    <div id="result" class="col border rounded">
+
+                    </div>
+
+                </div>
+            </div>
+            
         </div>
     </div>
 
